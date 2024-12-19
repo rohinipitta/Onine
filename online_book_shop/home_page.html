@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+body {
+    background-color: white;
+	background-image:url("book_home.jpeg");
+	
+}
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	padding-left:10px;
+	width:190px;
+    border: none;
+    cursor: pointer;
+	margin-left:0px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+font-size:20px;
+}
+.books {
+    position: relative;
+    display: inline-block;
+	margin-left:10px;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FFFDD0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+}
+.dropdown-content a:hover {
+    background-color: white;
+}
+.books:hover .dropdown-content {
+    display: block;
+}
+.books:hover .dropbtn {
+    background-color:#FF7F11;
+}
+.mag {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	width:150px;
+    border: none;
+    cursor: pointer;
+	margin-left:-20px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+font-size:20px;
+}
+.h{
+
+width:1280px;
+background-color:black;
+position:relative;
+top:-8px;
+margin-left:-8px;
+}
+.mag:hover{
+background-color:#FF7F11;
+color:black;
+
+}
+.kids {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	margin-left:10px;
+	width:150px;
+    border: none;
+    cursor: pointer;
+	margin-left:-20px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+font-size:20px;
+}
+.kids:hover{
+background-color:#FF7F11;
+color:black;}
+.audio {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	width:170px;
+    border: none;
+    cursor: pointer;
+	margin-left:-20px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+margin-left:10px;
+font-size:20px;
+}
+.audio:hover{
+background-color:#FF7F11;
+color:black;}
+.text {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	width:170px;
+    border: none;
+    cursor: pointer;
+	margin-left:-20px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+margin-left:10px;
+font-size:20px;
+}
+.text:hover{
+background-color:#FF7F11;
+color:black;
+}
+.n {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	width:150px;
+    border: none;
+    cursor: pointer;
+	margin-left:-10px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+margin-left:10px;
+font-size:20px;
+}
+.n:hover{
+background-color:#FF7F11;
+color:black;
+}
+.mga {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	width:150px;
+    border: none;
+    cursor: pointer;
+	margin-left:-10px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+margin-left:10px;
+font-size:20px;
+
+}
+.mga:hover{
+background-color:#FF7F11;
+color:black;
+}
+.orders {
+    background-color: black;
+    color: white;
+    padding: 16px; 
+	width:100;
+    border: none;
+    cursor: pointer;
+	margin-left:-10px;
+	font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+margin-left:10px;
+font-size:15px;
+}
+.orders:hover{
+background-color:#FF7F11;
+color:black;
+}
+
+.mag,
+.kids,
+.audio,
+.text,
+.n,
+.mga {
+    text-decoration: none; /* Remove underline */
+    color: white;
+}
+
+button.b1
+{
+
+
+
+float:right;
+margin-right:-10px;
+top:280px;
+position:relative;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;
+border-radius: 15px;
+font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:1000;
+  font-style: normal;
+  font-size:15px;
+   background-color:#CA2C92;
+  
+  border: 0px solid #555555;
+  font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+			color:balck;
+
+}
+button.b2
+{
+
+float:right;
+margin-right:-110px;
+top:350px;
+float:right;
+position:relative;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;
+border-radius: 15px;
+font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:1000;
+  font-style: normal;
+  font-size:15px;
+   background-color:#CA2C92;
+  
+  border: 0px solid #555555;
+  font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+			color:balck;
+
+}
+</style>
+</head>
+<body>
+<div class="h">
+<div class="books">
+    <button class="dropbtn">BOOKS</button>
+    <div class="dropdown-content">
+        <a href="#">Comics & Graphics</a>
+        <a href="#">Business & Management</a>
+        <a href="#">History & Politics</a>
+        <a href="#">Indian Writing</a>
+        <a href="#">Fiction & Non-Fiction</a>
+        <a href="#">Crime</a>
+    </div>
+</div>
+<a href="magzine.html"><button class="mag">Magazines</button></a>
+<a href="kids.html"><button class="kids">Kids</button></a>
+<a href="audio.html"><button class="audio">Audio Books</button></a>
+<a href="textbooks.html"><button class="text">Text Books</button></a>
+<a href="novels.html"><button class="n">Novels</button></a>
+<a href="manga.html"><button class="mga">Manga</button>
+<a href="display_orders.php"><button class="orders">Orders</button></a>
+
+</div>
+  <div class="lg">
+        <a href="mainpage.html"><button class="b1">Log out</button></a>
+		
+    </div>
+	<div class="sg">
+        <a href="signout.html"><button class="b2">Sign out</button></a>
+		
+    </div>
+</div>
+</body>
+</html>

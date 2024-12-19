@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Novels</title>
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Decreased max-width */
+  height: 150px; /* Decreased height */
+
+  text-align: center;
+  font-family: arial;
+  margin-left:10px;
+  float:left;
+   
+}
+.card h1{
+font-size:12px;
+font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+.card img{
+
+height:200px;
+}
+
+.price {
+  color: grey;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.card p{
+
+font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+.a{
+
+width:1000px;
+height:250px;
+margin-left:220px;
+position:relative;
+top:50px;
+}
+.a p{
+font-family: "Libre Caslon Text", serif;
+ position:relative;
+ 
+  font-style: normal;
+  font-size:20px;
+
+margin-top:20px;
+ 
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="card">
+  <img src="n1.jpg" style="width:100%">
+  <h1>To Kill a Mockingbird</h1>
+  <p class="price">&#x20B9;240
+</p>
+  <p> Released:July 11, 1960
+</p>
+ <form method="post" action="process_order.php">
+  <input type="hidden" name="book_name" value="To Kill a Mockingbird">
+  <input type="hidden" name="price" value="&#x20B9;240">
+  <input type="hidden" id="image_url" name="image_url" value="n1.jpg">
+  <button type="submit" name="buy">buy now</button>
+</form>
+
+</div>
+<div class="a">
+<p><b>About the Book</b></br>
+To Kill a Mockingbird, novel by American author Harper Lee, published in 1960. Enormously popular, it was translated into some 40 languages, sold more than 40 million copies worldwide, and is one of the most-assigned novels in American schools. In 1961 it won a Pulitzer Prize. The novel was praised for its sensitive treatment of a child’s awakening to racism and prejudice in the American South.</p>
+
+</div>
+</body>
+</html>

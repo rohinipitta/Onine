@@ -1,0 +1,170 @@
+<DOCTYPE html>
+<head>
+<style>
+body
+{
+background-color:#E1C7A2;
+
+
+}
+.s{
+
+position: absolute; /* Position relative to parent (.l) */
+    top: 60%; /* Position at the vertical center of the parent */
+    left: 50%; /* Position at the horizontal center of the parent */
+    transform: translate(-50%, -50%); /* Center alignment */
+    background-color:white; /* Green background with opacity */
+    width: 25%; /* Adjust width as needed */
+    height:50%; /* Adjust height as needed */
+    border-radius: 30px;
+    border: 2px solid white;
+	padding-left:40px;
+	padding-top:50px;
+
+}
+
+    
+input[type="email"] {
+            width: 250px;
+			margin-top:8px;
+           height:40px;
+            border: 2px solid #E8B730;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none; 
+     
+        }
+		
+		
+		 input[type="submit"] {
+          width: 250px;
+            margin-top: 5px;
+            height:35px;
+            border: 0px solid black;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+            background-color: #C76F16; /* Green background color */
+            color:black; /* White text color */
+            cursor: pointer; /* Add a pointer cursor on hover */
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+			
+			
+        }
+		
+input[type="submit"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+	 
+		
+   .fg {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 1000;
+            font-style: normal;
+            font-size: 20px;
+            color:black;
+        }
+        	
+	.eye1
+	{
+	background-color:white;
+	width:250px;
+	height:40px;
+	max-width:500px;
+	border-radius:20px;
+	top:300px;
+	display:flex;
+	align-items:center;
+	border: 2px solid #E8B730;
+	
+	}
+	.eye1 img{
+	
+	width:20px;
+	cursor:pointer;
+	margin-left:-45px;
+	
+	}
+	
+	 ::-webkit-input-placeholder {
+	     padding-left:10px;
+            color: black;
+            
+			
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+        }
+		.eye1 input{
+		width:100%;
+height:20px;
+border-radius:10px;
+		padding:4px 0;
+		border:0;
+		outline:0;
+		font-size:16px;
+		color:#555;
+		
+		
+		
+		}
+		.l img
+		{
+		
+		margin-left:-3px;
+	padding-top:-10px;
+		}
+.fg a{
+
+color:pink;
+}
+
+</style>
+</head>
+<body>
+
+<div class="s">
+<form action="signout.php" onsubmit="return validatePassword()" method="post">
+
+
+  <input type="email" id="email" name="email" placeholder="Email"><br><br>
+<div class="eye1">
+  
+    <input type="password" id="password" name="password" placeholder="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+	<img src="book_eye_close.png" id="eyeo1" >
+	
+	 </div>
+	 </br>
+	 <div clsss="fg">
+	 <a href="forgot.html">forgot password?</a>
+	 </div>
+<input type="submit" value="submit">
+</div>
+<script>
+let eyeo1=document.getElementById("eyeo1");
+let password=document.getElementById("password");
+eyeo1.onclick=function()
+{
+if(password.type=="password"){
+
+password.type="text";
+eyeo1.src="book_eye_open.png";
+}
+else
+{
+password.type="password";
+eyeo1.src="book_eye_close.png";
+}
+
+
+
+}
+</script>
+</body>
+</html>

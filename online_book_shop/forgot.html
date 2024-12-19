@@ -1,0 +1,243 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>forgot password</title>
+</head>
+<style>
+body
+{
+background-color:#E1C7A2;
+
+
+}
+.l
+{
+
+background-color:#F2EBE3;
+max-width:100%;
+margin-left:10px;
+margin-top:10px;
+width:1250px;
+height:530px;
+
+
+}
+
+.l img{
+max-width:100%;
+width:1250px;
+position:relative;
+margin-left:0px;
+margin-top:0px;
+
+height:530px;
+
+
+}
+
+.f
+{ 
+border: 2px solid white;
+position: absolute;
+
+width:300px;
+margin-left:50px;
+height:300px;
+margin-top:120px;
+padding-left:30px;
+padding-top:25px;
+border-radius:40px;
+margin-top:-400px;
+
+}
+	
+		input[type="email"] {
+            width: 250px;
+			margin-top:8px;
+           height:40px;
+            border: 2px solid white;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+        }
+		 input[type="submit"] {
+            width: 250px;
+            margin-top: 5px;
+            height:35px;
+            border: 0px solid black;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+           background-color:white;
+            color:black; /* White text color */
+            cursor: pointer; /* Add a pointer cursor on hover */
+	font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+			
+			
+        }
+	
+     .eyeo
+{
+background-color:white;
+	width:250px;
+	height:40px;
+	max-width:500px;
+	border-radius:20px;
+	top:300px;
+	display:flex;
+	align-items:center;
+	border: 2px solid white;
+
+}	 
+.eyeo img{
+	
+	width:25px;
+	cursor:pointer;
+	margin-left:-45px;
+	
+	}
+.eyeo input{
+		width:100%;
+		padding:4px 0;
+		height:20px;
+		border:0;
+		border-radius:10px;
+		outline:0;
+		font-size:16px;
+		color:#555;
+		
+		
+		
+		}
+.eyec{
+
+background-color:white;
+	width:250px;
+	height:40px;
+	max-width:500px;
+	border-radius:20px;
+	top:300px;
+	display:flex;
+	align-items:center;
+	border: 2px solid white;
+
+
+
+}
+
+.eyec input{
+width:100%;
+height:20px;
+border-radius:10px;
+		padding:4px 0;
+		border:0;
+		outline:0;
+		font-size:16px;
+		color:#555;
+
+
+
+
+}
+
+.eyec img{
+
+	width:25px;
+	cursor:pointer;
+	margin-left:-45px;
+
+
+
+
+}
+::-webkit-input-placeholder {
+	     padding-left:10px;
+            color: black;
+              color: black;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+			
+		
+        }
+
+</style>
+
+<body>
+<div class="l">
+<img src="forgot.jpg">
+</div>
+<div class="f">
+<form action="forgot.php" onsubmit="return validatePassword()" method="post">
+<input type="email" placeholder="email" name="email">
+</br></br>
+<div class="eyeo">
+   
+    <input type="password" id="password" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+	<img id="eyeo1" src="book_eye_close.png">
+</div>
+
+	<br>
+	<div class="eyec">
+    <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password">
+	<img id="eyeo2" src="book_eye_close.png">
+	</div>
+	</br></br>
+<input type="submit" value="Submit">
+
+</form>
+</div>
+
+
+<script>
+let eyeo1=document.getElementById("eyeo1");
+let password=document.getElementById("password");
+eyeo1.onclick=function()
+{
+if(password.type=="password"){
+
+password.type="text";
+eyeo1.src="book_eye_open.png";
+}
+else
+{
+password.type="password";
+eyeo1.src="book_eye_close.png";
+}
+}
+
+let eyeo2 = document.getElementById("eyeo2");
+    let cpassword = document.getElementById("cpassword");
+    eyeo2.onclick = function() {
+        if (cpassword.type === "password") {
+            cpassword.type = "text";
+            eyeo2.src = "book_eye_open.png";
+        } else {
+            cpassword.type = "password";
+            eyeo2.src = "book_eye_close.png";
+        }
+    }
+
+
+</script>
+</body>
+<script>
+function validatePassword() {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("cpassword").value;
+
+    if (password != confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+    return true;
+}
+
+</script>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title> create account</title>
+</head>
+<style>
+body
+{
+background-color:#E1C7A2;
+
+
+}
+.m
+{
+background-color:#F2EBE3;
+max-width:100%;
+margin-left:30px;
+margin-top:30px;
+width:1200px;
+height:500px;
+border-radius:60px;
+
+}
+.sign
+{
+background-color:white;
+max-width:100%;
+margin-left:50px;
+position:relative;
+
+top:40px;
+padding-top:20px;
+width:300px;
+height:400px;
+border-radius:30px;
+border :0px groove #000000;
+font-size:10px;
+font-color:#2C1810;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:1000;
+font-style: normal;
+padding-left:20px;
+}
+
+ input[type="text"] 
+	 
+	 {
+            width: 250px;
+            height:40px;
+            border: 2px solid #E8B730;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+			
+			
+        }
+		
+		
+		input[type="email"] {
+            width: 250px;
+			margin-top:8px;
+           height:40px;
+            border: 2px solid #E8B730;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+        }
+	
+		
+		 input[type="submit"] {
+            width: 250px;
+            margin-top: 5px;
+            height:35px;
+            border: 0px solid black;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none; /* Removes the default focus outline */
+            background-color: #C76F16; /* Green background color */
+            color:black; /* White text color */
+            cursor: pointer; /* Add a pointer cursor on hover */
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+			
+			
+        }
+		
+input[type="submit"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+		
+
+		
+		
+		
+		
+		  label {
+            color:black;
+            font-size: 14px;
+            margin-top:-2px;
+            display: block;
+			
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+        }
+		
+	
+       
+
+
+
+		
+		
+
+     .eyeo
+{
+background-color:white;
+	width:250px;
+	height:40px;
+	max-width:500px;
+	border-radius:20px;
+	top:300px;
+	display:flex;
+	align-items:center;
+	border: 2px solid #E8B730;
+
+}	 
+.eyeo img{
+	
+	width:25px;
+	cursor:pointer;
+	margin-left:-45px;
+	
+	}
+.eyeo input{
+		width:100%;
+		padding:4px 0;
+		height:20px;
+		border:0;
+		border-radius:10px;
+		outline:0;
+		font-size:16px;
+		color:#555;
+		
+		
+		
+		}
+.eyec{
+
+background-color:white;
+	width:250px;
+	height:40px;
+	max-width:500px;
+	border-radius:20px;
+	top:300px;
+	display:flex;
+	align-items:center;
+	border: 2px solid #E8B730;
+
+
+
+}
+
+.eyec input{
+width:100%;
+height:20px;
+border-radius:10px;
+		padding:4px 0;
+		border:0;
+		outline:0;
+		font-size:16px;
+		color:#555;
+
+
+
+
+}
+
+.eyec img{
+
+	width:25px;
+	cursor:pointer;
+	margin-left:-45px;
+
+
+
+
+}
+
+	 ::-webkit-input-placeholder {
+	     padding-left:10px;
+            color: black;
+            
+			
+			font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:20;
+  font-style: normal;
+        }
+.q{
+margin-left:300px;
+margin-top:-450px;
+
+}
+.q p{
+font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size:35px;
+margin-left:300px;
+}
+.q h1{
+ font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: italic;
+margin-left:650px;
+margin-top:4px;
+}
+.line{
+width:150px;
+height:5px;
+margin-left:600px;
+margin-top:-20px;
+border-radius:10px;
+background-color:black;
+
+}
+</style>
+<body>
+<div class="m">
+     <div class="sign">
+        <h1>CREATE ACCOUNT</h1>
+		</br>
+		<form action="connect.php" onsubmit="return validatePassword()" method="post" >
+		<div class="name">
+		   <input type="text" name="name" placeholder="Name">
+		</div>
+		</br>
+		<div class="email">
+		<input type="email" name="email" placeholder="email">
+		</div>
+		</br>
+		</br>
+	   <div class="eyeo">
+   
+    <input type="password" id="password" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+	<img id="eyeo1" src="book_eye_close.png">
+	
+</div>
+
+	<br>
+	 </br>
+	
+	 <div class="eyec">
+    <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password">
+	<img id="eyeo2" src="book_eye_close.png">
+	</div> 
+		</br>
+		<div class="Create account">
+		<input type="submit" name="submit" value="Create Account">
+		</div>
+		
+     </div>
+  </form>
+<div class="q">
+<p>You Know you've read</br></br> a good book when you <br></br>turn the last page and</br></br> feel a little as if you </br></br>have lost a friend.</p>
+<div class="line">
+</div>
+<h1>Paul Sweeney</h1>
+</div>
+</div>
+<script>
+let eyeo1=document.getElementById("eyeo1");
+let password=document.getElementById("password");
+eyeo1.onclick=function()
+{
+if(password.type=="password"){
+
+password.type="text";
+eyeo1.src="book_eye_open.png";
+}
+else
+{
+password.type="password";
+eyeo1.src="book_eye_close.png";
+}
+}
+
+let eyeo2 = document.getElementById("eyeo2");
+    let cpassword = document.getElementById("cpassword");
+    eyeo2.onclick = function() {
+        if (cpassword.type === "password") {
+            cpassword.type = "text";
+            eyeo2.src = "book_eye_open.png";
+        } else {
+            cpassword.type = "password";
+            eyeo2.src = "book_eye_close.png";
+        }
+    }
+
+
+</script>
+
+</body>
+<script>
+function validatePassword() {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("cpassword").value;
+
+    if (password != confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+    return true;
+}
+
+</script>
+</html>

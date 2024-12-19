@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Magzine</title>
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Decreased max-width */
+  height: 150px; /* Decreased height */
+
+  text-align: center;
+  font-family: arial;
+  margin-left:10px;
+  float:left;
+   
+}
+.card h1{
+font-size:12px;
+font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+.card img{
+
+height:200px;
+}
+
+.price {
+  color: grey;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.card p{
+
+font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-style: normal;
+
+}
+.a{
+
+width:1000px;
+height:250px;
+margin-left:220px;
+position:relative;
+top:50px;
+}
+.a p{
+font-family: "Libre Caslon Text", serif;
+ position:relative;
+ 
+  font-style: normal;
+  font-size:20px;
+
+margin-top:20px;
+ 
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="card">
+  <img src="k1.jpg" style="width:100%">
+  <h1>The Kid Who Came From Space</h1>
+  <p class="price">&#x20B9;259
+</p>
+  <p> Released:09 Jan 2020
+</p>
+  <form method="post" action="process_order.php">
+  <input type="hidden" name="book_name" value="The Kid Who Came From Space">
+  <input type="hidden" name="price" value="&#x20B9;259">
+  <input type="hidden" id="image_url" name="image_url" value="k1.jpg">
+  <button type="submit" name="buy">buy now</button>
+</form>
+
+</div>
+<div class="a">
+<p><b>About the Book</b></br>
+"The Kid Who Came From Space" is an enchanting story about a mysterious child from another world who arrives in a small town. Join two siblings on a thrilling adventure filled with wonder, danger, and the power of friendship as they uncover the truth about the visitor and the secrets of the universe. With its blend of science fiction and heartfelt emotion, this book sparks imagination and curiosity in readers of all ages.</p>
+</div>
+</body>
+</html>
